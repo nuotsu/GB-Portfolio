@@ -1,0 +1,241 @@
+/* Common */
+	@font-face{
+		font-family: 'Pokemon_Gen1';
+			src: url('../fonts/Pokemon_Gen1.ttf') format("truetype"),
+				 url('../fonts/Pokemon_Gen1.eot') format("eot"),
+				 url('../fonts/Pokemon_Gen1.woff') format("woff");}
+	*{margin: 0;}
+	body{
+		font-family: Pokemon_Gen1;
+		background-color: #000;}
+	a{
+		color: #292a1a;
+		font-size: 10px;
+		letter-spacing: 2px;
+		text-decoration: none;}
+	.ltr_spcg_1{letter-spacing: 1px;}
+	.ltr_spcg_0{letter-spacing: 0px;}
+	.txt_small{font-size: 8px;}
+	.scale_small{transform: scale(0.87,0.87);}
+	img{
+		mix-blend-mode: multiply;}
+
+.screen{
+	background-color: #cfceaf;
+	width: 160px;
+	height: 144px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;}
+
+/* Pokéball Border */
+	#border{
+		border: 8px solid transparent;
+		border-image: url('../images/border.png') fill 24 round;
+		border-image-width: 8px;}
+	div.border_L{
+		width: 64px;
+		height: 88px;}
+	div.border_R{
+		width: 64px;
+		position: fixed;
+		top: 0;
+		right: 0;}
+	div.border_B{
+		width: 144px;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		overflow: hidden;}
+	div.border_1ht{
+		height: 20px;}
+	div.border_2ht{
+		height: 40px;}
+
+p.border_txt{
+	margin: 0 0 0 1px;}
+div.border_inner{
+	position: fixed;
+	bottom: 8px;
+	right: 12px;}
+#mv_up_2L{
+	-webkit-transition: 1s linear;
+	transition: 1s linear;}
+#mv_up_2L:hover{
+	margin: -40px 0 0 0;
+	-webkit-transition: 1s linear;
+	transition: 1s linear;}
+img.arrow_down{
+	cursor: pointer;
+	padding: 4px;
+	position: relative;
+	bottom: -6px;
+	float: right;
+	width: 7px;}
+
+/* Welcome.HTML */
+	.slide_L{
+		position: relative;
+		-webkit-animation: slide_L 2.5s linear;
+		animation: slide_L 2.5s linear}
+		@-webkit-keyframes slide_L{
+			from{
+				right:-150px;
+				opacity:1}
+			to{
+				right:0;
+				opacity:1}}
+		@keyframes slide_L{
+			from{
+				right:-150px;
+				opacity:1}
+			to{
+				right:0;
+				opacity:1}}
+	img.red{
+		width: 56px;
+		margin: 20px 0 0 48px;}
+
+/* Navigator.HTML */
+	div.nav{
+		padding: 3px 0 0 0;}
+	a.d_block_extra{
+		display: block;
+		padding: 4px 0;}
+	a.arrow_R:before{
+		content: url('../images/arrow_R.png') ' ';
+		visibility: hidden;}
+	a.arrow_R:hover::before{
+		visibility: visible;}
+
+/* Works.HTML */
+	a.ttl_contents{
+		margin: 0 0 0 9px;}
+	div.dex_list{
+		margin: -8px 0 0 1px;}
+	sup{font-size: 8px;}
+	div.divider{
+		background-image: url(../images/divider.png);
+		background-repeat: no-repeat;
+		background-size: 160px 144px;
+		background-position: -14px 0;
+		background-blend-mode: multiply;}
+	p.done{
+		text-align: center;
+		line-height: 7px;}
+	div.RT_side{
+		position: absolute;
+		top: 16px;
+		left: 118px;}
+	div.RB_side{
+		position: absolute;
+		bottom: 5px;
+		right: 0px;}
+
+/* Dex00x.HTML */
+	div.dex{
+		background-image: url(../images/dex.png);
+		background-repeat: no-repeat;
+		background-size: 160px 144px;
+		background-blend-mode: multiply;}
+	div.dex_img{
+		position: fixed;
+		top: 10px;
+		left: 15px;
+		mix-blend-mode: multiply;}
+	img.dex_img{
+		width: 50px;}
+	div.dex_number{
+		position: fixed;
+		bottom: 68px;
+		left: 33px;}
+	div.dex_stat{
+		position: fixed;
+		bottom: 57px;
+		left: 72px;}
+	a.dex_stat{
+		display: block;
+		margin: -8px 0;}
+	div.dex_info{
+		height: 64px;
+		overflow: hidden;
+		position: fixed;
+		top: 76px;}
+
+/* Links.HTML */
+	div.links_tmc{
+		background-image: url(../images/links_tmc.png);
+		background-repeat: no-repeat;
+		background-size: 160px 144px;
+		background-blend-mode: multiply;}
+	div.tmc{
+		margin: 1px 0 0 1px;}
+	a.d_block{
+		display: block;
+		padding: 3px 0;}
+
+/* About.HTML & About_2.HTML*/
+	.battle{
+		background-image: url(../images/battle.png);
+		background-repeat: no-repeat;
+		background-size: 160px 144px;
+		background-blend-mode: multiply;}
+	.slide_L_2{
+		position:relative;
+		-webkit-animation: slide_L_2 2.0s linear;
+		animation: slide_L_2 2.0s linear}
+		@-webkit-keyframes slide_L_2{
+			from{
+				right: -180px;
+				opacity:1}
+			to{
+				right: -90px;
+				opacity:1}}
+		@keyframes slide_L_2{
+			from{
+				right: -180px;
+				opacity:1}
+			to{
+				right: -90px;
+				opacity:1}}
+	img.red_2{
+		width: 56px;
+		position: relative;
+		right: -90px;}
+	.about_2{
+		background-image: url(../images/diploma.png);
+		background-repeat: no-repeat;
+		background-size: 160px 144px;
+		background-blend-mode: multiply;;}
+	.about_title{
+		position: fixed;
+		left: 50px;
+		top: 15px;}
+	.about_sub-title{
+		font-size: 9px;
+		position: fixed;
+		left: 25px;
+		top: 35px;}
+	p.about_info{
+		line-height: 16px;}
+	a.about_info{
+		position: fixed;
+		left: 15px;
+		top: 55px;}
+	img.arrow_down_about{
+		cursor: pointer;
+		padding: 4px;
+		position: fixed;
+		bottom: 10px;
+		right: 28px;
+		width: 7px;}
+
+/* Social.HTML */
+	div.links_tmc_2{
+		background-image: url(../images/links_tmc_2.png);
+		background-repeat: no-repeat;
+		background-size: 160px 144px;
+		background-blend-mode: multiply;}
+

@@ -1,0 +1,90 @@
+/* Common */
+	@font-face{
+		font-family: 'Pokemon_Gen1';
+			src: url('../fonts/Pokemon_Gen1.ttf'),
+				 url('../fonts/Pokemon_Gen1.eot');}
+	*{margin: 0;}
+	body{
+		font-family: Pokemon_Gen1;
+		background-color: black;}
+	a{
+		text-decoration: none;
+		color: #fff;}
+
+img.screen{
+	pointer-events: none;
+	z-index: 1;
+	position: absolute;
+	width: 500px;
+	height: 608px;
+	opacity: 0.5;
+	mix-blend-mode: multiply;}
+
+div.gameboy{
+	width: 500px;
+	height: 608px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url('../images/gameboy.png');
+	background-size: 500px;
+	background-repeat: no-repeat;
+	background-position: center;}
+
+div.iframe{
+	position: fixed;
+	top: 109px;
+	left: 194px;
+	transform:
+		skewX(-1deg)
+		skewY(-2.8deg)
+		rotate(20deg);}
+
+iframe.gameboy{
+	border: none;
+	width: 160px;
+	height: 144px;
+	transform :
+		scale(1.045,1.125)
+		perspective(1100px)
+		rotateY(-10deg);}
+
+/* Options */
+	a.options{
+		text-decoration: none;
+		color: #fff;}
+	div.options{
+		padding: 10px;
+		position: fixed;
+		bottom: 0;}
+	div.dev{
+		padding: 10px;
+		position: fixed;
+		bottom: 0;
+		right: 0;}
+	a.resizeScreen{
+		cursor: pointer;}
+
+/* Screen.HTML */
+	iframe.screen{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(2,2);
+		transition: transform 0.5s ease-in-out;
+		border: none;
+		width: 160px;
+		height: 144px;}
+	#resizer{cursor: pointer;}
+	iframe.resizeScreen{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: transform 0.5s ease-in-out;
+		border: none;
+		width: 160px;
+		height: 144px;}
+
+
